@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nude profissionais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .stylist-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .booking-form {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="nude_logo_128x128.png" alt="logo" width="50" height="50" >
+                    <div class="text-2xl font-bold text-pink-600">Nude <span class="text-gray-800">Profissionais</span></div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-pink-600 font-medium">Início</a>
+                    <a href="#services" class="text-gray-800 hover:text-pink-600 font-medium">Serviços</a>
+                    <a href="#stylists" class="text-gray-800 hover:text-pink-600 font-medium">Profissionais</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-pink-600 font-medium">Galeria</a>
+                    <a href="#contact" class="text-gray-800 hover:text-pink-600 font-medium">Contato</a>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-gray-800"></i>
+                </button>
+                <div class="hidden md:block">
+                    <a href="#booking" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition duration-300">Agendar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-white pt-20 bg-cover bg-center" 
+         style="background-image: url('Logo\ Moderno\ e\ Minimalista.png');" >
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Overlay escuro -->
+  <div class="relative z-10 container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforme sua beleza</h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Descubra o melhor em cuidados capilares, estética e bem-estar em nosso espaço exclusivo.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#booking" class="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-medium transition duration-300">Agendar agora</a>
+      <a href="#services" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white px-8 py-3 rounded-full font-medium transition duration-300">Nossos serviços</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-10 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- PAI COM FLEX EM TELAS MÉDIAS E MAIORES -->
+    <div class="flex flex-col md:flex-row items-center">
+      
+      <!-- Imagem à esquerda -->
+      <div class="md:w-1/2">
+        <img src="luis.JPG" class="h-[838px] w-full object-cover rounded-lg shadow-lg">
+      </div>
+
+      <!-- Texto à direita -->
+      <div class="md:w-1/2 p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">✂️ Sobre o Profissional Cabeleireiro</h2>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Luis Ribeiro Faria </h3>
+        <div class="flex items-center text-gray-600 mb-6">
+          <i class="fas fa-map-marker-alt mr-2"></i>
+          <span>Norte de Portugal</span>
+        </div>
+        
+        <p class="text-gray-700 mb-6">Com talento, dedicação e sensibilidade estética, o cabeleireiro é muito mais do que um profissional da beleza — é um artista que transforma visual e autoestima. Por meio do corte, coloração, hidratação e outras técnicas capilares, ele realça a identidade de cada cliente, respeitando estilos, tendências e individualidade.
+
+        Atento às novidades do mercado, o cabeleireiro está sempre em constante aperfeiçoamento, dominando novas ferramentas e produtos para oferecer um atendimento personalizado, acolhedor e de alta qualidade. Mais do que cuidar dos cabelos, ele escuta, aconselha e cria conexões humanas verdadeiras.
+
+        Seja em salões, eventos ou produções especiais, o cabeleireiro é referência de confiança e criatividade — um verdadeiro parceiro na jornada da beleza e bem-estar.</p>
+
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Especialista:</h3>
+        <p class="text-gray-700 mb-6">...</p>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pintura</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Corte</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Relaxamentos</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hidratacao</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Oferecemos uma variedade de serviços de beleza e bem-estar para realçar sua beleza natural.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hair Services -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="cabelo.jpg">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-cut text-pink-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Cabeleireiro</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Transforme seu visual com nossos serviços profissionais de corte, coloração e tratamentos capilares.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Corte e escova</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Coloração profissional</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Tratamentos capilares</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Penteados para eventos</li>
+                        </ul>
+                        <a href="#booking" class="inline-block mt-4 text-pink-600 font-medium hover:text-pink-700">Agendar →</a>
+                    </div>
+                </div>
+                
+                <!-- Nail Services -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Logo Moderno e Minimalista.png">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-sparkles text-pink-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Manicure & Pedicure</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Cuide das suas mãos e pés com nossos serviços especializados em estética de unhas.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Manicure tradicional</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Pedicure relaxante</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Alongamento de unhas</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Esmaltação em gel</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Podologia</li>
+                        </ul>
+                        <a href="#booking" class="inline-block mt-4 text-pink-600 font-medium hover:text-pink-700">Agendar →</a>
+                    </div>
+                </div>
+                
+                <!-- Other Services -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Estética Facial" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-spa text-pink-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Estética Facial</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Tratamentos faciais personalizados para realçar sua beleza natural e promover a saúde da pele.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Limpeza de pele</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Peeling facial</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Hidratação profunda</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Massagem facial</li>
+                            <li class="flex items-center"><i class="fas fa-check text-pink-600 mr-2"></i> Design de sobrancelhas</li>
+                        </ul>
+                        <a href="#booking" class="inline-block mt-4 text-pink-600 font-medium hover:text-pink-700">Agendar →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stylists Section -->
+    <section id="stylists" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Profissionais</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Conheça nossa equipe de especialistas em beleza prontos para te atender.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stylist 1 -->
+                <div class="stylist-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="luis.JPG" alt="Cabeleireira" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Luis Faria</h3>
+                        <p class="text-pink-600 font-medium mb-3">Cabeleireiro Master</p>
+                        <p class="text-gray-600 mb-4">Especialista em coloração e cortes modernos com 15 anos de experiência.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stylist 3 -->
+                <div class="stylist-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Esteticista" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Camila</h3>
+                        <p class="text-pink-600 font-medium mb-3">Esteticista Facial</p>
+                        <p class="text-gray-600 mb-4">Especializada em tratamentos faciais e cuidados com a pele.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stylist 4 -->
+                <div class="stylist-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Pedicure" class="w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Fernanda</h3>
+                        <p class="text-pink-600 font-medium mb-3">Pedicure & Podóloga</p>
+                        <p class="text-gray-600 mb-4">Especialista em cuidados com os pés e tratamentos podológicos.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-pink-600"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Gallery -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossa <span class="text-pink-500">Galeria</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Veja alguns dos nossos trabalhos e inspire-se para seu próximo visual.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 1" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 2" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 3" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 4" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 5" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Modelo 6" 
+                         class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-medium transition duration-300">
+                    Ver Mais Trabalhos
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que dizem nossos clientes</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Adoro o atendimento no Glamour Studio! A Ana faz milagres com meu cabelo e sempre saio renovada. Ambiente super aconchegante e profissionais excelentes."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mariana Silva</h4>
+                            <p class="text-gray-600">Cliente há 3 anos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"A Juliana faz as melhores unhas que já tive! Sempre inovando com designs incríveis. O salão é impecável e todas as profissionais são muito atenciosas."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carolina Oliveira</h4>
+                            <p class="text-gray-600">Cliente há 2 anos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"As limpezas de pele com a Camila transformaram minha pele! Notável a diferença em poucas sessões. Recomendo demais todos os serviços do salão."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Patrícia Rocha</h4>
+                            <p class="text-gray-600">Cliente há 1 ano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-pink-50 rounded-2xl p-8 md:p-12 shadow-inner">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Agende seu <span class="text-pink-500">horário agora</span></h2>
+                        <p class="text-gray-600 mb-8">
+                            Preencha o formulário ao lado e nossa equipe entrará em contato para confirmar seu agendamento. Oferecemos flexibilidade de horários para sua conveniência.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check text-pink-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Atendimento Personalizado</h4>
+                                    <p class="text-gray-600 text-sm">Cada cliente recebe atenção exclusiva e tratamentos sob medida.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check text-pink-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Produtos Premium</h4>
+                                    <p class="text-gray-600 text-sm">Utilizamos apenas marcas profissionais de alta qualidade.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check text-pink-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Ambiente Aconchegante</h4>
+                                    <p class="text-gray-600 text-sm">Nosso espaço foi projetado para seu conforto e relaxamento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Seu Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 outline-none transition duration-300" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 outline-none transition duration-300" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Serviço Desejado</label>
+                                <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 outline-none transition duration-300">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="cut">Corte & Estilo</option>
+                                    <option value="color">Coloração</option>
+                                    <option value="manicure">Manicure & Pedicure</option>
+                                    <option value="facial">Tratamento Facial</option>
+                                    <option value="other">Outros</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="date" class="block text-gray-700 font-medium mb-2">Data Preferencial</label>
+                                <input type="date" id="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 outline-none transition duration-300">
+                            </div>
+                            <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                                Solicitar Agendamento
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-pink-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                <p class="text-gray-600">R. Gen Humberto Delgado 45 <br>Leça da palmeira</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                <p class="text-gray-600">xxxx - xxxx<br>xxxx - xxxx</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">contato@nude.com<br>agendamentos@nude.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Horário de Funcionamento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 9h às 20h<br>Sábado: 9h às 18h<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Envie uma mensagem</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="contact-name">Nome</label>
+                            <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="contact-phone">Telefone</label>
+                            <input type="tel" id="contact-phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2" for="contact-subject">Assunto</label>
+                            <input type="text" id="contact-subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2" for="contact-message">Mensagem</label>
+                            <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-medium transition duration-300">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="mt-12 bg-white rounded-xl shadow-md overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.3240114689966!2d-8.697914899999999!3d41.1929091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2468d34dff61fb%3A0xdacf63bb3fca7201!2sNude%20Professionals!5e0!3m2!1spt-PT!2spt!4v1747849166004!5m2!1spt-PT!2spt" 
+                        width="100%" 
+                        height="450" 
+                        stoyle="border:0;" 
+                        allowfullscreen="" 
+                        lading="lazy"></iframe>
+            </div>
+
+        
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Glamour Studio</h3>
+                    <p class="text-gray-400">Transformando sua beleza e autoestima desde 2010. Oferecemos os melhores serviços de beleza e bem-estar em São Paulo.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Início</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+                        <li><a href="#stylists" class="text-gray-400 hover:text-white transition duration-300">Profissionais</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Galeria</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cabeleireiro</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Manicure</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pedicure</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Estética Facial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Podologia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Inscreva-se para receber promoções e novidades.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Nude Profissionais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-6 right-6 bg-pink-600 text-white p-3 rounded-full shadow-lg hover:bg-pink-700 transition duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('shadow-md');
+            nav.classList.toggle('space-y-4');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling (example)
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
